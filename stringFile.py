@@ -50,3 +50,9 @@ print(message_list)
 # join method- combined individual list elements into a single string
 
 print(" ".join(message_list))
+
+# This is the example of f string
+first_name = "Prince"
+last_name = "Punshi"
+
+print(f"My name is {first_name.upper()} and my last name is {last_name}")
