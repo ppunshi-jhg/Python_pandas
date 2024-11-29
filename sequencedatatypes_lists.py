@@ -46,3 +46,34 @@ print(random_list)
 random_list_2 = [1,2,3]
 new_list = random_list + random_list_2
 print(new_list)
+
+# List functions
+# len() len(random_list)
+# sum(list_name)
+# min(list_name)
+# max(list_name)
+# sort() ----> The sort() method sorts the list permanently(in place)
+# sorted()---> The sorted() function returns a sorted list, but doesnt change the original list
+# .index()
+# count() and reverse()
+
+customer_ids = ["C0001", "C0002", "C0003", "C0004", "C0005"]
+print(f"The customer list count is {customer_ids.count("C0002")}")
+print(len(customer_ids))
+print(customer_ids.index("C0003"))
+
+# Nesting and copying lists:
+
+nested_list = [["a","b","c"],[1,2,3],["d","e","f"]]
+
+print(nested_list[0])
+print(nested_list[0][1])
+
+# You can copy via three ways
+# 1. assignment to the other variable- in this case any change to one will affect the other copy
+
+nested_list_2 = nested_list
+
+nested_list[0] = ["aa","bb", "cc"]
+
+print(nested_list_2)
