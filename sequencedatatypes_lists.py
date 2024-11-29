@@ -40,3 +40,9 @@ del random_list[1:3]  #it will delete the index number 1 and 2 element
 random_list.remove("Dushy")
 
 print(random_list)
+
+# You can concatenate two lists together by having the add sign in it
+
+random_list_2 = [1,2,3]
+new_list = random_list + random_list_2
+print(new_list)
