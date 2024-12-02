@@ -17,6 +17,38 @@ for rating in customer_ratings:
 
 print(numeric_ratings)
 print(round(sum(numeric_ratings)/len(numeric_ratings),3))
+
+# Looping over indices- you need to specify a range (usually the length of an iterable)
+new_list = []
+for i in range(len(euro_list)):
+    new_list.append(round(euro_list[i]*exchange_rate,2))
+    
+print(new_list)
+
+# Enumerate - is the best of both worlds. The enumerate function will return both the index and item in an iterable as it loops through. it returns the index and element in a tupe
+
+# for index,element in enumerate(list)
+
+list_1 = [1,2,3,4]
+list_2 = ["Prince", "Dhwani", "Raval", "Punshi"]
+
+for index, element in enumerate(list_1):
+    print(f"The first element of list 2 is {list_2[index]} and the first element of list 1 is {element}")
+    
+    
+# Second example
+
+inventories = [10,14,10,15,8,7]
+prices = [2.99,3.99,4.99,5.99,6.99,7.99]
+product_values = []
+for index,element in enumerate(inventories):
+    product_values.append(round(prices[index]*element))
+    
+print(product_values)
+    
+    
+
+
     
 
 
