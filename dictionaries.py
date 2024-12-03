@@ -1,0 +1,2 @@
+# Limitation of Lists: can be inefficient when you need to look up specific values, as they can only be accessed vioa indexing. So, if you need to look for the item you have look into the whole list.
+# To resolve the above issue we have dictionaries, as dictionarties store key-value pair, where keys are used to look up values.

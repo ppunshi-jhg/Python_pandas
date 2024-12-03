@@ -45,6 +45,26 @@ for index,element in enumerate(inventories):
     product_values.append(round(prices[index]*element))
     
 print(product_values)
+
+# While loop
+x= 0
+while x<10 :
+    print(x)
+    x += 1
+    
+# Loop Control: statements help refine loop behavior and handle potential errors- break, continue, pass, try & Except
+# Try and Except: statements resolve errors in a loop without stopping its execution
+# Try: indicates the first block of code to run (which could resultr in an error)
+# except: indicates an optional block of code to run in case of an error in the try block
+
+price_list = [5.99, None, 19.99, 24.99, 0, "74.99"]
+
+for price in price_list:
+    try:
+        affordable = 50//price
+        print(f"This is affordable {affordable}")
+    except:
+        print("The price is not right")
     
     
 
