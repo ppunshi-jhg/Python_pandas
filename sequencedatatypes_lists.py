@@ -77,3 +77,7 @@ nested_list_2 = nested_list
 nested_list[0] = ["aa","bb", "cc"]
 
 print(nested_list_2)
+
+# 2. Shallow copy - via copy() method- it will just change the value of the inside of the nested element for both the lists
+# 3. Deep Copy -  via deepcopy() method- both the lists will be independent in this case but you will have to use the deepcopy() method from copy library
+

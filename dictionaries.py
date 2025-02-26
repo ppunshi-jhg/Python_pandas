@@ -77,3 +77,13 @@ price_list = [10,20]
 print(zip(item_list,price_list))  #zip returns the zip object, you can perform list fuinction to convert into list
 
 print(list(zip(item_list,price_list)))
+
+economic_data = {
+    "India": {
+        "Uttar Pradesh": {"population": 241, "gdp": 220},
+        "Rajasthan": {"population": 200, "gdp": 130}
+    }
+}
+
+for state in economic_data["India"].values():
+    print(state)
